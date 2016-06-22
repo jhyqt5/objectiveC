@@ -7,10 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Passenger.h"
+#import "PlaneTicket.h"
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
+        
+        NSMutableString *name = [[NSMutableString alloc] initWithString: @"Dan Huang"];
+        NSMutableString *departureCity = [[NSMutableString alloc] initWithString: @"Denver"];
+        NSMutableString *destination = [[NSMutableString alloc] initWithString: @"Oakland"];
+        NSMutableString *passenger = [[Passenger alloc] initWithName: name] ;
+        
         
     }
     return 0;

@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 @interface Passenger : NSObject
 
-@property (nonatomic, copy) NSString *name;
-@property (nonatomic, readonly) NSDate *birthday;
+@property (nonnull, nonatomic, copy) NSString *name;
+@property (nullable, nonatomic, readonly) NSDate *birthday;
 
--(instancetype)initWithName:(NSString*)name;
+-(nullable instancetype)initWithName:(NSString*)name;
 
 @end
+NS_ASSUME_NONNULL_END
